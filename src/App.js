@@ -1,8 +1,12 @@
+import React from 'react';
 import PortfolioWebsite from './components/PortfolioWebsite';
+import ErrorBoundary from './components/common/ErrorBoundary';
 
 function App() {
   return (
-    <PortfolioWebsite />
+    <ErrorBoundary>
+      <PortfolioWebsite />
+    </ErrorBoundary>
   );
 }
 

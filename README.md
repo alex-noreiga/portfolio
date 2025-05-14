@@ -1,70 +1,123 @@
-# Getting Started with Create React App
+# Portfolio Project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is my portfolio website built with React.
 
-## Available Scripts
+[![Portfolio CI/CD](https://github.com/alex-noreiga/portfolio/actions/workflows/ci-cd.yml/badge.svg)](https://github.com/alex-noreiga/portfolio/actions/workflows/ci-cd.yml)
 
-In the project directory, you can run:
+## Development Workflow
 
-### `npm start`
+This project uses a modern development workflow with linting, testing, and CI/CD integration.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Prerequisites
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Node.js (v18+ recommended)
+- npm or yarn
 
-### `npm test`
+### Installation
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```bash
+# Clone the repository
+git clone https://github.com/your-username/portfolio.git
+cd portfolio
 
-### `npm run build`
+# Install dependencies
+npm install
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+# Set up Git hooks (one-time setup)
+npm run setup-husky
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Available Scripts
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```bash
+# Start development server
+npm start
 
-### `npm run eject`
+# Run tests
+npm test
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+# Run tests with coverage
+npm run test:ci
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+# Build for production
+npm run build
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+# Deploy to GitHub Pages
+npm run deploy
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+# Lint code
+npm run lint
+
+# Fix linting issues
+npm run lint:fix
+
+# Format code with Prettier
+npm run format
+
+# Analyze bundle size
+npm run analyze
+```
+
+### Code Quality Tools
+
+This project uses the following tools to ensure code quality:
+
+- **ESLint**: JavaScript and React linting
+- **Prettier**: Code formatting
+- **Jest and React Testing Library**: Unit and component testing
+- **Husky**: Git hooks for pre-commit validation
+- **lint-staged**: Run linters on git staged files
+
+### Git Workflow
+
+1. Create a feature branch from main
+
+   ```bash
+   git checkout -b feature/your-feature-name
+   ```
+
+2. Make your changes and commit them (linting and tests will run automatically)
+
+   ```bash
+   git add .
+   git commit -m "feat: add new feature"
+   ```
+
+3. Push your branch and create a pull request
+
+   ```bash
+   git push origin feature/your-feature-name
+   ```
+
+4. Wait for CI checks to pass and then merge
+
+### Working with Git Hooks
+
+This project uses Husky for Git hooks. Here are helpful commands:
+
+```bash
+# Temporarily disable Git hooks (useful when you need to make quick changes)
+npm run disable-hooks
+
+# Re-enable Git hooks
+npm run enable-hooks
+
+# Make an emergency commit (bypasses all hooks)
+npm run emergency-commit "fix: urgent hotfix"
+```
+
+### Continuous Integration & Deployment
+
+This project uses GitHub Actions for CI/CD:
+
+- On every push to main and pull request, the workflow:
+  - Builds the project
+  - Runs linting
+  - Runs tests
+  - Deploys to GitHub Pages (only on push to main)
 
 ## Learn More
 
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

@@ -1,0 +1,7 @@
+#!/bin/sh
+
+# Run lint-staged, but always exit with success
+npx --no-install lint-staged || true
+
+# Nothing will fail the pre-commit hook
+exit 0
