@@ -1,5 +1,6 @@
 import React from 'react';
 import { scrollToSection } from '../../utils/scrollUtils';
+import Button from '../Button';
 
 const HeroSection = () => {
   return (
@@ -20,9 +21,11 @@ const HeroSection = () => {
                 e.preventDefault();
                 scrollToSection('contact');
               }}
-              className="bg-blue-600 text-white px-6 py-3 rounded-md hover:bg-blue-700 transition duration-300"
+              className="inline-block"
             >
-              Contact Me
+              <Button variant="primary">
+                Contact Me
+              </Button>
             </a>
             <a
               href="#projects"
@@ -30,9 +33,20 @@ const HeroSection = () => {
                 e.preventDefault();
                 scrollToSection('projects');
               }}
-              className="border border-blue-600 text-blue-600 px-6 py-3 rounded-md hover:bg-blue-50 transition duration-300"
+              className="inline-block"
             >
-              View Projects
+              <Button variant="outlined">
+                View Projects
+              </Button>
+            </a>
+            <a
+              href="/resume.pdf"
+              download="Alexandra_Noreiga_Resume.pdf"
+              className="inline-block"
+            >
+              <Button variant="primary" size="md" className="bg-green-600 hover:bg-green-700">
+                Download Resume
+              </Button>
             </a>
           </div>
         </div>
