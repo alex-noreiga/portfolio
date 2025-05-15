@@ -40,8 +40,10 @@ const HeroSection = () => {
               </Button>
             </a>
             <a
-              href="/resume.pdf"
+              href={`${process.env.PUBLIC_URL}/resume.pdf`}
               download="Alexandra_Noreiga_Resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-block"
             >
               <Button variant="primary" size="md" className="bg-green-600 hover:bg-green-700">
