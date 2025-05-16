@@ -10,10 +10,11 @@ const ProjectsSection = lazy(() => import('./sections/ProjectsSection'));
 const SkillsSection = lazy(() => import('./sections/SkillsSection'));
 const LeadershipSection = lazy(() => import('./sections/LeadershipSection'));
 const EducationSection = lazy(() => import('./sections/EducationSection'));
+const CertificationsSection = lazy(() => import('./sections/CertificationsSection'));
 const ContactSection = lazy(() => import('./sections/ContactSection'));
 
 const PortfolioWebsite = () => {
-  const sectionIds = ['home', 'about', 'experience', 'projects', 'skills', 'education', 'contact'];
+  const sectionIds = ['home', 'about', 'experience', 'projects', 'skills', 'education', 'certifications', 'contact'];
   const activeSection = useActiveSection(sectionIds);
 
   return (
@@ -28,6 +29,7 @@ const PortfolioWebsite = () => {
         <SkillsSection />
         <LeadershipSection />
         <EducationSection />
+        <CertificationsSection />
         <ContactSection />
       </Suspense>
     </Layout>

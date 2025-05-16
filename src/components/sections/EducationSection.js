@@ -27,12 +27,6 @@ const EducationSection = () => {
       location: 'Huntsville, AL',
       period: 'August 2016 - May 2020',
     },
-    {
-      degree: 'Certificate in Project Management',
-      institution: 'University of California - Irvine',
-      location: 'Irvine, CA',
-      period: 'August 2020 - May 2021',
-    },
   ];
 
   return (

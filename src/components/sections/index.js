@@ -5,4 +5,5 @@ export { default as ProjectsSection } from './ProjectsSection';
 export { default as SkillsSection } from './SkillsSection';
 export { default as LeadershipSection } from './LeadershipSection';
 export { default as EducationSection } from './EducationSection';
+export { default as CertificationsSection } from './CertificationsSection';
 export { default as ContactSection } from './ContactSection';

@@ -3,7 +3,7 @@ import { Menu, X } from 'lucide-react';
 import DesktopNav from './DesktopNav';
 import MobileNav from './MobileNav';
 
-const NAV_SECTIONS = ['Home', 'About', 'Experience', 'Projects', 'Skills', 'Education', 'Contact'];
+const NAV_SECTIONS = ['Home', 'About', 'Experience', 'Projects', 'Skills', 'Education', 'Certifications', 'Contact'];
 
 const Navbar = ({ activeSection }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
